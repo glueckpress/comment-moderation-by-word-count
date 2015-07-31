@@ -79,7 +79,7 @@ add_action( 'plugins_loaded' , 'comment_moderation_by_word_count__pre_comment_ap
 function comment_moderation_by_word_count__unapprove( $approved , $commentdata ) {
 	$option = comment_moderation_by_word_count__get_sanitized_word_count();
 
-	if ( $approved !== 1 || ! $option )
+	if ( $approved !== 1 || ! $option || current_user_can( 'edit_posts' ) )
 		return $approved;
 
 	return str_word_count( utf8_decode( $commentdata[ 'comment_content' ] ) ) > absint( $option ) ? 0 : $approved;
