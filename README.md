@@ -3,7 +3,7 @@ Sends a comment to moderation queue if it contains more than a given number of w
 
 ## Description
 
-This simple WordPress plugin displays a message in any single post that has been published x years ago from the current time or earlier. The default time to count back is 1 year, but you can [change that](//wordpress.org/plugins/aged-content-message/faq/).
+This simple WordPress plugin will send any comment that would otherwise be approved automatically by WordPress to the moderation queue if it contains more than a given number of words.
 
 **Props:** This plugin solely exists, because [Mika Epstein](https://github.com/ipstenu) [tweeted](https://twitter.com/Ipstenu/status/627130377828564993) her idea. :bouquet:
 
